@@ -29,7 +29,10 @@
 			<img src="styles/images/movie-trailer-PS-mockup.png" alt="Fast and Furious">
 		</figure>
 		
-	
+		<article>
+			<h1 class="col-12">The Plot</h1>
+			<p class="col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget nisl id justo interdum blandit sed et velit. Proin dictum, ex vitae sagittis dignissim, mauris lacus commodo velit, non hendrerit sem diam eget urna. Ut dolor velit, tristique et interdum nec, egestas aliquet lacus. Ut velit ipsum, cursus non condimentum ac, maximus in turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget nisl id justo interdum blandit sed et velit. Proin dictum, ex vitae sagittis dignissim, mauris lacus commodo velit, non hendrerit sem diam eget urna. Ut dolor velit, tristique et interdum nec, egestas aliquet lacus. Ut velit ipsum, cursus non condimentum ac, maximus in turpis.</p>
+		</article>	
 
 	
 
@@ -56,7 +59,8 @@
 	
 	<h1>Join the Fan Club!</h1>
 	<div class="form-container">	
-		<form action="" method="get" class="fan-form">
+		<form action="" method="get" class="fan-form" onSubmit="alert('Thank you for your information has been submitted.')"> 
+		
 			<div>
 				<label for="firstname">Name</label>
 					<input type="text" id="firstname" name="firstname"  placeholder="first name">
@@ -181,7 +185,13 @@
 
 			<div class="submitButton">
 				<input type="submit" value="Join now">
+				
 			</div>
+
+
+
+
+
 			<p>By submitting this form, you are granting us permission to email you. You may unsubscribe via the link found at the bottom of every email. (See our Email Privacy Policy for details.) </p>
 		</div><!--form-container-->	
 			</form>
@@ -189,7 +199,7 @@
 				
 		</form>
 
-
+	<div id="form-response"></div>	
 
 	
 	<footer></footer>
