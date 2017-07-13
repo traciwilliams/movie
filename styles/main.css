@@ -1,9 +1,37 @@
-
-body {
-    font-family: 'Oxygen', sans-serif;
+/*========================*/
+/*BASIC SETUP*/
+/*========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/*=====FLEXBOX===*/
 
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+/*========================*/
+/*=====HEADER===*/
+/*========================*/
+
+header {
+    background-image: url("images/movie-trailer-PS-mockup.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;   
+}
+
+
+
+
+/*========================*/
+/*=====FLEXBOX===*/
+/*========================*/
 .container {
     display: flex;
     justify-content: center;
@@ -18,42 +46,64 @@ body {
 //     width: 600px;
 // }
 
+/*========================*/
+/*=====RESUABLE ELEMENTS====*/
+/*========================*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+.grid {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: grey; 
+  }
 
 
-
-
+/*========================*/
 /*=====NAVIGATION====*/
+/*========================*/
 
-nav {
+.main-nav {
     display: flex;
     justify-content: flex-end;
+    list-style: none;
 }
 
 
-nav ul {
-	list-style-type: none;
+.main-nav li {
+	display: inline-block;
+    //margin-left: 40px;
+    margin: 20px 20px 20px 20px;
 }
 
-nav li {
-	display: inline;
-    padding: 20px 10px 20px 10px;
-}
-
-nav a {
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 18px 0;
+    color: #fff;
 	text-decoration: none;
-}
-
-nav a:hover {
-	color: white;
-	background-color: black;
-}
-
-p {
-	color: black;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    transition: border-left 2s;
 }
 
 
+
+.main-nav li a:hover,
+.main-nav li a:active {
+	color: blue;
+	border-left: 2px solid yellow;
+}
+
+
+/*========================*/
 /*=====FORM====*/
+/*========================*/
+
 form {
     width: 75%;
     padding: 2em;
@@ -135,7 +185,10 @@ input[type="submit"]:hover {
     background:#cc3f85;
     text-shadow:0 1px 0 #000;
 }
+/*========================*/
 /*=====MEDIA QUERIES====*/
+/*========================*/
+
 @media only screen and (min-width: 600px) {
     .col-m-1 { width: 8.33%; }
     .col-m-2 { width: 16.66%; }

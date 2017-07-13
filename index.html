@@ -3,13 +3,15 @@
 <head>
 	<title>Movie </title>
 	<meta charset="UTF-8"/>
+
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/myframework.css"/>
 	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
 	
-	<link rel="stylesheet" type="text/css" href="styles/myframework.css"/>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
 </head>
 <body>
 	<div class="grid">
@@ -17,19 +19,13 @@
 
 
 		<header>
-			<nav class="col-12" id="main-nav">
+			<nav class="col-12 main-nav">
 				<li><a href="home.html">Home</a></li>
 				<li><a href="synopsis.html">Synopsis</a></li>
 				<li><a href="tickets.html">Tickets</a></li>
 			</nav>
 		</header>
 	
-
-
-
-		<figure class="col-12">
-			<img src="styles/images/movie-trailer-PS-mockup.png" alt="Fast and Furious">
-		</figure>
 		
 		<article>
 			<h1 class="col-12">The Plot</h1>
@@ -67,10 +63,13 @@
 	<h1>Join the Fan Club!</h1>
 	<div class="form-container">	
 		<!-- <form action="" method="get" class="fan-form" onSubmit="alert('Thank you for your information has been submitted.')">  -->
-		<form action="thankyou.html" method="post" class="fan-form" onSubmit="alert('Thank you for your information has been submitted.')"> 
+
+
+		<form action="thankyou.html" method="post" name="fanclub" class="fan-form" onSubmit="alert('Thank you for your information has been submitted.')"> 
 		
 			<div>
 				<label for="firstname">Name</label>
+
 					<input type="text" id="firstname" name="firstname"  placeholder="first name">
 					<input type="text" id="lastname" name="lastname"  placeholder="last name">
 			</div>
