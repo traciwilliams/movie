@@ -266,7 +266,7 @@ header {
     margin: 0;
     overflow: hidden;
     height: auto;
-    background-color: orange;
+    background-color: #fff;
 }
 
 .cast-photo img {
@@ -282,6 +282,61 @@ header {
     transform: scale(1.03);
 }
 
+/*========================*/
+/*=====FEATURED CAST MEMBER====*/
+/*========================*/
+
+// .featured-section {
+//     background-color: red;
+// }
+.featured-section div:first-child {
+    padding-bottom: 50px;
+    text-align: center;
+
+}
+
+.featured-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    //background-color: black;
+    margin: 0 auto;
+    padding: 20px 0 50px 10px;
+}
+
+.featured-photo img {
+    width: 150%;
+    height: auto;
+    border-radius: 5%;
+}
+
+blockquote {
+    //background-color: green;
+    width: 90%;
+    padding: 9%;
+    font-style: italic;
+    font-size: 200%;
+    position: relative;
+}
+
+ blockquote:before {
+    content:"\201C";
+    font-size: 300%;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 13px;
+ }
+
+ blockquote:after {
+    content:"\201C";
+    font-size: 300%;
+    display: block;
+    position: absolute;
+    // top: -5px;
+    // left: -3px;
+ }
 
 /*========================*/
 /*=====FORM====*/
