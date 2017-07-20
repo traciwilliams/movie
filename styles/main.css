@@ -9,7 +9,7 @@
 
 
 html {
-    background-color: #fff;
+    //background-color: #fff;
     color: #555;
     font-family: 'Oxygen', sans-serif;
     font-weight: 300;
@@ -24,46 +24,57 @@ html {
     height: 0;
     visibility: hidden;
 }
-/*========================*/
-/*=====HEADER===*/
-/*========================*/
 
-header {
-    //background-image: url("images/movie-trailer-PS-mockup.png");
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/fast-and-furious.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed;   
-}
-// .hero-text-box1 {
-//     //background-color: red;
-//     position: absolute;
-//     width: 1140px;
-//     text-align: left;
-//     //top: -10%;
-//     left: -20%;
-//     //transform: translate(-50%, -50%);
-// }
-
-.hero-text-box {
-    //background-color: red;
-    position: absolute;
-    width: 1140px;
-    text-align: left;
-    top: 60%;
-    left: 60%;
-    transform: translate(-50%, -50%);
+/*========================*/
+/*=====RESUABLE ELEMENTS====*/
+/*========================*/
+.row {
+    max-width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    
 }
 
-.hero-text-box h1 {
-    background-color: transparent;
-    color: #fff;
-    text-transform: uppercase;
+.grid {
+    max-width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    //background-color: grey; 
+  }
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 240%;
     font-weight: 300;
-    text-align: left;
-    //transform: translate(-50%, -50%);
+    color: #e67e22;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+
+}  
+
+h1:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content:" ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
+
+h2 {
+    font-size: 180%;
+    font-weight: 300;
+    color: #64350b;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+
+}
+
 /*========================*/
 /*=====BUTTONS===*/
 /*========================*/
@@ -107,77 +118,50 @@ header {
 
 
 
-
-
 /*========================*/
-/*=====RESUABLE ELEMENTS====*/
+/*=====HEADER===*/
 /*========================*/
-.row {
-    max-width: 1140px;
-    max-width: 100%;
-    margin: 0 auto;
-    
+
+header {
+    //background-image: url("images/movie-trailer-PS-mockup.png");
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/fast-and-furious.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;   
 }
 
-.grid {
-    max-width: 1140px;
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: grey; 
-  }
 
-h1 {
-    margin-top: 10px;
-    margin-bottom: 25px;
+.hero-text-box {
+    //background-color: red;
+    position: absolute;
+    width: 1140px;
+    text-align: left;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+    background-color: transparent;
     color: #fff;
-    text-align: center;
-    font-size: 240%;
+    text-transform: uppercase;
     font-weight: 300;
-    color: #e67e22;
-    word-spacing: 4px;
-    letter-spacing: 1px;
-}  
+    text-align: left;
+    //transform: translate(-50%, -50%);
+}
 
-
-
-/*========================*/
-/*=====HOW IT WORKS====*/
-/*========================*/
-
-
-.how-paragraphs {
-    // //background-color: yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    //float: left;
+.hero-title {
+    font-size: 300%;
+    font-weight: 300;
 }
 
 
-
-.how-steps {
-    background-color: red;
-    color: #e67e22;
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
-    border: 2px solid #e67e22;
-    display: inline-block;
-    //border-radius: 15%;
-    height: 50px;
-    width: 50px;
-    //text-align: center;
-    padding: 5px 5px 5px 15px;
-    margin: 0 auto;
-
-    // float: left;
-    // font-size: 150%;
-    // margin-right: 20px;
-}
-
-.how-paragraphs p {
-    padding: 20px 20px;
-   
+.hero-title:after {
+    display: block;
+    height: 2px;
+    background-color: transparent;
+    content:" ";
 }
 
 /*========================*/
@@ -193,7 +177,7 @@ h1 {
 
 
 .main-nav li {
-	display: inline-block;
+    display: inline-block;
     //margin-left: 40px;
     margin: 20px 20px 20px 20px;
 }
@@ -202,21 +186,58 @@ h1 {
 .main-nav li a:visited {
     padding: 12px 0;
     color: #fff;
-	text-decoration: none;
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 80%;
     border-bottom: 2px solid transparent;
     transition: border-left 2s;
 }
 
-
-
 .main-nav li a:hover,
 .main-nav li a:active {
-	color: blue;
-	border-left: 2px solid yellow;
+    color: blue;
+    border-left: 2px solid yellow;
 }
 
+/*========================*/
+/*=====HOW IT WORKS====*/
+/*========================*/
+
+.how-section div:first-child {
+    padding-bottom: 50px;
+    text-align: center;
+
+}
+
+
+
+.how-paragraphs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #64350b;
+}
+
+
+
+.how-steps {
+    //background-color: red;
+    font-size: 180%;
+    color: #e67e22;
+    border: 2px solid #64350b;;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center; 
+}
+
+.how-paragraphs p {
+    padding: 20px 20px;
+}
+
+
+    
 
 /*========================*/
 /*=====FORM====*/
