@@ -79,7 +79,8 @@ h2 {
 /*=====BUTTONS===*/
 /*========================*/
 
-.btn {
+.btn,
+.submitButton {
     display: inline-block;
     text-decoration: none;
     padding: 10px 10px 10px 10px;
@@ -89,14 +90,18 @@ h2 {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+.submitButton:link,
+.submitButton:visited {
     background-color: blue;
     color: yellow;
 
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+.submitButton:hover,
+.submitButton:active {
     background-color: #e67e22;
     color: purple;
 
@@ -302,7 +307,7 @@ header {
     width: 80%;
     //background-color: black;
     margin: 0 auto;
-    padding: 20px 0 50px 10px;
+    padding: 20px 0 50px 20px;
 }
 
 .featured-photo img {
@@ -312,12 +317,14 @@ header {
 }
 
 blockquote {
-    //background-color: green;
+    background-color: rgba(255,14,0,0.5);
     width: 90%;
-    padding: 9%;
+    padding: 50px 50px 50px 90px;
+    margin: 10px 10px 10px 10px;
     font-style: italic;
     font-size: 200%;
     position: relative;
+    border-radius: 5%;
 }
 
  blockquote:before {
@@ -326,7 +333,7 @@ blockquote {
     display: block;
     position: absolute;
     top: 20px;
-    left: 13px;
+    left: 3px;
  }
 
  blockquote:after {
@@ -342,6 +349,32 @@ blockquote {
 /*=====FORM====*/
 /*========================*/
 
+.form-section {
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+.form-container {
+    background-color: rgba(0,55,25,0.7);
+    padding: 10px 10px 10px 70px;
+    border-radius: 43px;
+}
+
+input[type=text],
+input[type=email],
+select,
+option {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+
+
+/*
 form {
     width: 75%;
     padding: 2em;
@@ -354,7 +387,7 @@ form {
     display: flex;
     justify-content: center;
     background-color: coral;
-    height: 50vh;
+    //height: 100vh;
 
 }
 
@@ -375,8 +408,6 @@ select:focus {
     box-shadow:inset 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.2);
     outline:0;
 }
-
-
 
 
 .form-field {
@@ -423,6 +454,16 @@ input[type="submit"]:hover {
     background:#cc3f85;
     text-shadow:0 1px 0 #000;
 }
+*/
+
+
+
+
+
+
+
+
+
 /*========================*/
 /*=====MEDIA QUERIES====*/
 /*========================*/

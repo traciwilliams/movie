@@ -88,3 +88,14 @@ img {
 .col-12 {
     width: 100%;
 }
+
+
+
+
+.col-2-of-2 {
+    width: 100%;
+}
+
+.col-1-of-2 {
+    width: 49.2%;
+}
